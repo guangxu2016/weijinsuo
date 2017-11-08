@@ -1,0 +1,212 @@
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+.sort {
+    width: 100%;
+    height: 100%;
+}
+
+.sort .header {
+    position: relative;
+    width: 100%;
+    height: 45px;
+    background-image: url("../images/header-bg.png");
+    background-size: 1px 44px;
+    border-bottom: 1px solid #999;
+    box-sizing: border-box;
+}
+
+/*返回按钮*/
+.sort .header .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 44px;
+    padding: 10px 11px;
+    box-sizing: border-box;
+    background-origin: content-box;
+    background-clip: content-box;
+    background-image: url("../images/jd-sprites.png");
+    background-size: 200px 200px;
+    background-position: -21px 2px;
+}
+
+/*搜索框*/
+.sort .header .search {
+    width: 100%;
+    height: 44px;
+    padding: 0px 50px;
+    box-sizing: border-box;
+}
+
+.sort .header .search input {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 7px;
+    border-radius: 5px;
+    padding-left: 20px;
+}
+
+/*菜单*/
+.sort .header .menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 44px;
+    padding: 10px 11px;
+    box-sizing: border-box;
+    background-origin: content-box;
+    background-clip: content-box;
+    background-image: url("../images/jd-sprites.png");
+    background-size: 200px 200px;
+    background-position: -60px 2px;
+}
+
+/*主体*/
+.sort .main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 45px;
+    box-sizimg: border-box;
+    display: flex;
+}
+
+/*左边*/
+.sort .main .aside {
+    width: 90px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.sort .main .aside ul {
+    width: 100%;
+}
+
+.sort .main .aside ul li {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border-right: 1px solid #999;
+    border-bottom: 1px solid #999;
+    text-align: center;
+    font-size: 14px;
+}
+
+.sort .main .aside ul li.active {
+    border-right: none;
+    background-color: #fff;
+    color: #c91523;
+}
+
+/*右边*/
+
+.sort .main .section {
+    flex: 1;
+    padding: 0 10px;
+    overflow: auto;
+    background-color: #fff;
+}
+/*推荐*/
+.sort .main .section .tuijian {
+    width: 100%;
+    padding-top: 18px;
+}
+.sort .main .section .tuijian h2 {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 17px;
+}
+.sort .main .section .tuijian ul {
+    width: 100%;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.sort .main .section .tuijian ul li {
+    float: left;
+    width: 33.3333%;
+    height: 45px;
+    line-height: 45px;
+    font-size: 13px;
+    border-bottom:1px solid #ccc;
+    border-right:1px solid #ccc;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/*导购*/
+.sort .main .section .daogou {
+    margin-top: 15px;
+}
+
+.sort .main .section .daogou h2 {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 17px;
+}
+.sort .main .section .daogou ul {
+    width: 100%;
+    overflow: hidden;
+}
+.sort .main .section .daogou ul li {
+    width: 33.333%;
+    float: left;
+}
+.sort .main .section .daogou ul li a {
+    width: 100%;
+    display: block;
+}
+
+.sort .main .section .daogou ul li a img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.sort .main .section .daogou ul li span {
+    padding-left:15px;
+    font-size:13px;
+}
+
+/*品类*/
+.sort .main .section .pinlei {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 30px;
+}
+.sort .main .section .pinlei h2 {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 17px;
+}
+.sort .main .section .pinlei ul {
+    width: 100%;
+    overflow: hidden;
+}
+.sort .main .section .pinlei ul li {
+    width: 33.333%;
+    float: left;
+}
+.sort .main .section .pinlei ul li a {
+    width: 100%;
+    display: block;
+}
+
+.sort .main .section .pinlei ul li a img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.sort .main .section .pinlei ul li span {
+    padding-left:15px;
+    font-size:13px;
+}

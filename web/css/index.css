@@ -1,0 +1,612 @@
+/* 固定搜索栏 */
+#jd .jd_top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #c91523;
+    z-index: 10;
+}
+
+/* logo */
+#jd .jd_top .logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 56px;
+    height: 21px;
+    /* background-position: ; */
+    background: url("../images/jd-sprites.png") no-repeat 0 -109px;
+    background-size: 200px 200px;
+}
+
+/* 搜索框 */
+#jd .jd_top .search {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-right: 50px;
+    padding-left: 75px;
+    box-sizing: border-box;
+}
+
+/* 放大镜 */
+#jd .jd_top .search i.icon {
+    position: absolute;
+    top: 10px;
+    left: 85px;
+    width: 20px;
+    height: 20px;
+    background-position: -60px -109px;
+    background-image: url("../images/jd-sprites.png");
+    background-size: 200px 200px;
+}
+
+/* 搜索框 */
+#jd .jd_top .search input {
+    margin-top: 5px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding-left: 30px;
+    font-size: 14px;
+    box-sizing: border-box;
+
+}
+
+/* 登录 */
+#jd .jd_top .go .login {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    /* line-height: 40px; */
+    color: #fff;
+    font: 15px "微软雅黑";
+
+}
+
+/* 内容 */
+/* 轮播图 */
+.main .dong {
+    width: 100%;
+    /* padding-bottom: 50px; */
+}
+
+.main .dong img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+/* 导航 */
+.main {
+    padding-bottom: 50px;
+}
+
+.main .nav {
+    width: 100%;
+    background-color: #fff;
+}
+
+.main .nav ul {
+    width: 100%;
+    overflow: hidden;
+}
+
+.main .nav ul li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 8px 0px;
+}
+
+.main .nav ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.main .nav ul li img {
+    width: 40px;
+    height: 40px;
+}
+
+.main .nav ul li a b {
+    display: block;
+    padding-top: 4px;
+}
+
+/* 秒杀 */
+
+.main .seckill {
+    padding: 0 10px;
+    margin-top: 6px;
+    background-color: #FFF;
+}
+
+.main .seckill .title {
+    line-height: 1;
+    padding: 10px 0;
+    overflow: hidden;
+}
+
+.main .seckill .title h6 {
+    padding-left: 22px;
+    margin-right: 5px;
+    font-size: 15px;
+    font-weight: normal;
+    color: #CA1327;
+    float: left;
+    position: relative;
+}
+
+.main .seckill .title h6:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -8px;
+    left: 0;
+    width: 20px;
+    height: 26px;
+    background-image: url(../images/jd-sprites.png);
+    background-size: 200px 200px;
+    background-position: -84px -107px;
+}
+
+.main .seckill .time {
+    float: left;
+}
+
+.main .seckill .time span {
+    background-color: #000;
+    color: #fff;
+}
+
+.main .seckill .more {
+    display: block;
+    line-height: 15px;
+    padding-right: 10px;
+    font-size: 12px;
+    color: #666;
+    float: right;
+    position: relative;
+}
+
+.main .seckill .more:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 1px;
+    right: 0;
+    width: 7px;
+    height: 12px;
+    background-image: url(../images/jd-sprites.png);
+    background-size: 200px 200px;
+    background-position: -186px -51px;
+}
+
+/* // 购物 */
+.main .seckill .shop {
+    padding: 10px 0;
+    overflow: hidden;
+}
+
+.main .seckill .shop li {
+    width: 33.333%;
+    /* padding: 0 10px; */
+    float: left;
+    box-sizing: border-box;
+    overflow: hidden
+}
+
+.main .seckill .shop a {
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+.main .seckill .shop a img {
+    width: 100%;
+    height: 100%;
+}
+
+.main .seckill .shop b {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 5px;
+    color: #FFF;
+    font-size: 10px;
+    font-weight: normal;
+    border-radius: 50%;
+    background-color: #fdb60a;
+}
+
+.main .seckill .price {
+    text-align: center;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.main .seckill .price span {
+    display: block;
+    margin-top: 8px;
+    color: #ed5657;
+}
+
+.main .seckill .price span:last-child {
+    margin-top: 4px;
+    color: #888;
+    text-decoration: line-through;
+    font-size: 10px;
+}
+
+/* 活动 */
+.main {
+    width: 100%;
+}
+
+.main .huodong {
+    position: relative;
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+.main .huodong .tu {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.main .huodong ul {
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+    width: 100%;
+    padding: 0px 8px;
+    box-sizing: border-box;
+}
+
+.main .huodong li {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.main .huodong li a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.main .huodong li a img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 主营 */
+.main .zhuying {
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+.main .zhuying .box {
+    overflow: hidden;
+    width: 100%;
+}
+
+.main .zhuying .box li {
+    width: 33.333%;
+    float: left;
+
+}
+
+.main .zhuying .box li img {
+    width: 100%;
+    height: 100%;
+}
+
+.main .zhuying .box1 {
+    width: 100%;
+    overflow: hidden;
+}
+
+.main .zhuying .box1 li {
+    float: left;
+    width: 50%;
+
+}
+
+.main .zhuying .box1 li a {
+    width: 100%;
+    display: block;
+}
+
+.main .zhuying .box1 li a img {
+    width: 100%;
+}
+
+/* 广告 */
+.main .advert {
+    width: 100%;
+}
+
+.main .advert img {
+    width: 100%;
+}
+
+/* 特色超市 */
+
+.main .supermarket {
+    width: 100%;
+    background-color: #fff;
+}
+
+.main .supermarket h2 {
+    margin-top: 10px;
+    padding-left: 15px;
+    height: 30px;
+    line-height: 30px;
+    color: #c91523;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.main .supermarket ul {
+    width: 100%;
+}
+
+.main .supermarket ul li {
+    width: 50%;
+    float: left;
+}
+
+.main .supermarket ul li a {
+    display: block;
+    width: 100%;
+}
+
+.main .supermarket ul li a img {
+    width: 100%;
+}
+
+/*主题街*/
+.main .theme {
+    width: 100%;
+}
+
+.main .theme h2 {
+    margin-top: 10px;
+    padding-left: 15px;
+    height: 30px;
+    line-height: 30px;
+    color: #c91523;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.main .theme ul {
+    width: 100%;
+    overflow: hidden;
+}
+
+.main .theme ul li.one {
+    float: left;
+    width: 50%;
+}
+
+.main .theme ul li.one a {
+    display: block;
+    width: 100%;
+}
+
+.main .theme ul li.one a img {
+    width: 100%;
+}
+
+.main .theme ul li.two a {
+    width: 50%;
+    float: left;
+}
+
+.main .theme ul li.two a img {
+    width: 100%;
+}
+
+.main .theme ul li.three a {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.main .theme ul li.three a img {
+    width: 100%;
+}
+
+/*品牌推荐*/
+.main .pinpai {
+    width: 100%;
+}
+
+.main .pinpai h2 {
+    margin-top: 10px;
+    padding-left: 15px;
+    height: 30px;
+    line-height: 30px;
+    color: #c91523;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.main .pinpai ul {
+    width: 100%;
+}
+
+.main .pinpai li {
+    float: left;
+    width: 30%;
+}
+
+.main .pinpai ul li:first-child {
+    width: 40%;
+}
+
+.main .pinpai ul li a {
+    display: block;
+    width: 100%;
+}
+
+.main .pinpai ul li a img {
+    width: 100%;
+}
+
+/*猜你喜欢*/
+.main .love {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.main .love .love_top {
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.main .love .love_top h2 {
+    margin-top: 10px;
+    padding-left: 12px;
+    height: 30px;
+    line-height: 30px;
+    color: #000;
+    font-size: 15px;
+    font-weight: normal;
+    float: left;
+}
+
+.main .love .love_top a {
+    position: relative;
+    color: #c91523;
+    font-size: 12px;
+    float: right;
+    padding-right: 15px;
+}
+
+.main .love .love_top a:before {
+    content: ".";
+    display: block;
+    position: absolute;
+    top: 9px;
+    left: -20px;
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-image: url("../images/icon-login.png");
+    background-position: 0 0;
+    background-size: 18px;
+}
+
+.main .love .love_top a:after {
+    content: ".";
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 0px;
+    width: 12px;
+    height: 10px;
+    background-repeat: no-repeat;
+    background-image: url("../images/icon-right.png");
+    background-position: center center;
+
+}
+
+/*下半部分*/
+.main .love .love_bottom {
+    width: 100%;
+    overflow: hidden;
+}
+
+.main .love .love_bottom .item {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0px 10px;
+    float: left;
+}
+
+.main .love .love_bottom .item p {
+    margin-top: 10px;
+    width: 100%;
+    font-size: 13px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.main .love .love_bottom .item > a {
+    width: 100%;
+    display: block;
+}
+
+.main .love .love_bottom .item a img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.main .love .love_bottom .item .price {
+    /*box-sizing: border-box;*/
+    width: 100%;
+    margin: 10px 0px;
+    border-top: 1px solid #ccc;
+    position: relative;
+}
+
+.main .love .love_bottom .item .price span {
+    position: relative;
+    top: 8px;
+}
+
+.main .love .love_bottom .item .price a {
+    float: right;
+    margin: 5px 0;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    padding: 2px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* 固定底部工具栏 */
+#jd .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 44px;
+    background-color: #fff;
+}
+
+#jd .footer ul {
+    display: flex;
+}
+
+#jd .footer ul, #jd .footer ul li, #jd .footer ul li a, #jd .footer ul li a img {
+    width: 100%;
+    height: 100%;
+}
+
+#jd .footer ul li {
+    flex: 1;
+    text-align: center;
+}
+
+#jd .footer ul li a {
+    display: block;
+}
+
+#jd .footer ul li a img {
+    width: auto;
+}
